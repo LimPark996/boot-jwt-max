@@ -38,7 +38,6 @@ public class HelloController {
         return "Hello World";
     }
 
-    // 주의!!! 얘 없으면 JWT 적용 안된당
     @Operation(
         security = @SecurityRequirement(name = "bearerAuth")
     )
