@@ -48,9 +48,4 @@ public class AuthController {
     public ResponseEntity<String> usernameNotFound(UsernameNotFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
-
-//    @ExceptionHandler(DataIntegrityViolationException.class)
-//    public ResponseEntity<String> dataIntegrityViolation(DataIntegrityViolationException ex) {
-//        return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
-//    }
 }
